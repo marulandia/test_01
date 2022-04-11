@@ -1,0 +1,14 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.color {
+  color: #707070;
+}
+.navegador {
+  position: absolute;
+  z-index: 13;
+}
+.carousel-principal {
+  position: relative;
+}
