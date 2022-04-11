@@ -29,6 +29,9 @@ hr {
 .card {
   background-color: skyblue;
 }
+.button {
+  background-color: skyblue;
+}
 
 @media (max-width: 575.98px) {
   .quienes-somos {
