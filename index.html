@@ -27,49 +27,49 @@
 		<title>Desafío 04 - Bootstrap</title>
 	</head>
 	<body>
-		<nav>
-			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-				<div class="container-fluid navegador">
-					<div class="row ps-5 pe-5 bg-transparent">
-						<div class="col d-flex align-items-center">
-							<img src="assets/img/viajes.svg" alt="white-logo" height="30px" /><span class="text-white"
-								>Viajes Chile</span
-							>
-						</div>
-						<div class="col d-flex justify-content-end">
-							<nav class="navbar navbar-expand-sm navbar-dark">
-								<div class="container-fluid">
-									<a class="navbar-brand" href="#">Home</a>
-									<button
-										class="navbar-toggler"
-										type="button"
-										data-bs-toggle="collapse"
-										data-bs-target="#navbarSupportedContent"
-										aria-controls="navbarSupportedContent"
-										aria-expanded="false"
-										aria-label="Toggle navigation"
-									>
-										<span class="navbar-toggler-icon"></span>
-									</button>
-									<div class="collapse navbar-collapse" id="navbarSupportedContent">
-										<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-											<li class="nav-item">
-												<a class="nav-link active" aria-current="page" href="#">Features</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#">Prices</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link disabled">Disabled</a>
-											</li>
-										</ul>
-									</div>
+		<nav class="fixed-top">
+			<div class="container-fluid navegador">
+				<div class="row ps-5 pe-5 bg-transparent">
+					<div class="col d-flex align-items-center">
+						<img src="assets/img/viajes.svg" alt="white-logo" height="30px" /><span class="text-white"
+							>Viajes Chile</span
+						>
+					</div>
+					<div class="col d-flex justify-content-end">
+						<nav class="navbar navbar-expand-sm navbar-dark">
+							<div class="container-fluid">
+								<a class="navbar-brand" href="#">Home</a>
+								<button
+									class="navbar-toggler"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#navbarSupportedContent"
+									aria-controls="navbarSupportedContent"
+									aria-expanded="false"
+									aria-label="Toggle navigation"
+								>
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="collapse navbar-collapse" id="navbarSupportedContent">
+									<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+										<li class="nav-item">
+											<a class="nav-link active" aria-current="page" href="#">Features</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Prices</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link disabled">Disabled</a>
+										</li>
+									</ul>
 								</div>
-							</nav>
-						</div>
+							</div>
+						</nav>
 					</div>
 				</div>
 			</div>
+		</nav>
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 			<figure class="carousel-principal">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
@@ -101,7 +101,8 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</figure>
-		</nav>
+		</div>
+
 		<article class="container-fluid quienes-somos">
 			<div class="row">
 				<div class="col-sm-12 col-md-4"></div>
