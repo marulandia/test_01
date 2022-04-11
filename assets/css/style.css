@@ -4,6 +4,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  background-color: black;
 }
 .color {
   color: #707070;
@@ -14,4 +15,10 @@ body {
 }
 .carousel-principal {
   position: relative;
+}
+hr {
+  color: aliceblue;
+}
+.info .icon {
+  background-color: skyblue;
 }
