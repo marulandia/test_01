@@ -4,9 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!--FontAwesome-->
+
+		<!--FontAwesome v6.1.1-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+		<!--Bootstrap 5.1.3-->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -22,6 +24,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet" />
+		<!--JQuery 3.6.0-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 		<link rel="stylesheet" href="assets/css/style.css" />
 
@@ -39,7 +43,7 @@
 					<div class="col d-flex justify-content-end">
 						<nav class="navbar navbar-expand-sm navbar-dark">
 							<div class="container-fluid">
-								<a class="navbar-brand" href="#">Home</a>
+								<a class="navbar-brand" href="#">Inicio</a>
 								<button
 									class="navbar-toggler"
 									type="button"
@@ -54,13 +58,15 @@
 								<div class="collapse navbar-collapse" id="navbarSupportedContent">
 									<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 										<li class="nav-item">
-											<a class="nav-link active" aria-current="page" href="#">Features</a>
+											<a class="nav-link active" aria-current="page" href="#quienes-somos"
+												>Quienes Somos</a
+											>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Prices</a>
+											<a class="nav-link" href="#destacados">Destacados</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link disabled">Disabled</a>
+											<a class="nav-link" href="#contacto">Contacto</a>
 										</li>
 									</ul>
 								</div>
@@ -103,7 +109,7 @@
 				</button>
 			</figure>
 		</div>
-		<article class="container quienes-somos text-center mt-5 mb-5">
+		<article class="container quienes-somos text-center mt-5 mb-5" id="quienes-somos">
 			<p class="text-white fs-4">QUIENES SOMOS</p>
 			<hr />
 			<div class="row">
@@ -149,12 +155,18 @@
 			</div>
 		</article>
 		<article>
-			<div class="container text-center mb-5 mt-5 seccion-destacados">
+			<div class="container text-center mb-5 mt-5 seccion-destacados" id="destacados">
 				<p class="text-white fs-4">DESTACADOS</p>
 				<hr />
 				<div class="row">
 					<div class="col-md-4 col-lg-3 pb-5 d-flex justify-content-center">
-						<div class="card" style="width: 18rem">
+						<div
+							class="card"
+							data-bs-toggle="tooltip"
+							data-bs-placement="top"
+							title="Paraje 1"
+							style="width: 18rem"
+						>
 							<img src="assets/img/card1.jpg" class="card-img-top" alt="..." />
 							<div class="card-body">
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
@@ -162,11 +174,18 @@
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci et sunt explicabo
 									facilis ex eum, cupiditate numquam minus provident nisi iure?
 								</p>
+								 
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-lg-3 pb-5 d-flex justify-content-center">
-						<div class="card" style="width: 18rem">
+						<div
+							class="card"
+							data-bs-toggle="tooltip"
+							data-bs-placement="top"
+							title="Paraje 2"
+							style="width: 18rem"
+						>
 							<img src="assets/img/card2.jpg" class="card-img-top" alt="..." />
 							<div class="card-body">
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
@@ -178,7 +197,13 @@
 						</div>
 					</div>
 					<div class="col-md-4 col-lg-3 pb-5 d-flex justify-content-center">
-						<div class="card" style="width: 18rem">
+						<div
+							class="card"
+							data-bs-toggle="tooltip"
+							data-bs-placement="top"
+							title="Paraje 3"
+							style="width: 18rem"
+						>
 							<img src="assets/img/card3.jpg" class="card-img-top" alt="..." />
 							<div class="card-body">
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
@@ -190,7 +215,13 @@
 						</div>
 					</div>
 					<div class="col-md-4 col-lg-3 pb-5 d-flex justify-content-center">
-						<div class="card" style="width: 18rem">
+						<div
+							class="card"
+							data-bs-toggle="tooltip"
+							data-bs-placement="top"
+							title="Paraje 4"
+							style="width: 18rem"
+						>
 							<img src="assets/img/card4.jpg" class="card-img-top" alt="..." />
 							<div class="card-body">
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
@@ -205,7 +236,7 @@
 			</div>
 		</article>
 		<section>
-			<div class="container mb-5 mt-5 seccion-contacto">
+			<div class="container mb-5 mt-5 seccion-contacto" id="contacto">
 				<p class="text-white fs-4 text-center">CONTACTO</p>
 				<hr />
 				<div class="row inputs mt-5 pt-4 pb-3">
@@ -230,9 +261,39 @@
 								style="height: 100px"
 							></textarea>
 						</div>
-					</div>		
-						<div class="col mb-3 ps-5 pe-5">
-							<button class="btn button text-white">Enviar</button>
+					</div>
+					<div class="col mb-3 ps-5 pe-5">
+						<button class="btn button text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							Enviar
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal -->
+			<div
+				class="modal fade"
+				id="exampleModal"
+				tabindex="-1"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Mensaje enviado</h5>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Cerrar"
+							></button>
+						</div>
+						<div class="modal-body">
+							Muchas gracias por contactarte con nosotros, te contestaremos a la brevedad
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 						</div>
 					</div>
 				</div>
@@ -242,18 +303,17 @@
 			<div class="container">
 				<div class="row d-flex text-center align-items-center pt-3 pb-3">
 					<div class="col">
-						<h3 class="fs-6 text-white">
-							VIAJES CHILE
-						</h3>
+						<h3 class="fs-6 text-white">VIAJES CHILE</h3>
 					</div>
-					<div class="col text-white">					
-							<i class="fa-brands fa-github me-3"></i>			
-							<i class="fa-brands fa-linkedin me-3"></i>	
-							<i class="fa-brands fa-twitter me-3"></i>	
-							<i class="fa-brands fa-facebook"></i>
+					<div class="col">
+						<a href="" class="text-white"><i class="fa-brands fa-github me-3"></i></a>
+						<a href="" class="text-white"><i class="fa-brands fa-linkedin me-3"></i></a>
+						<a href="" class="text-white"><i class="fa-brands fa-twitter me-3"></i></a>
+						<a href="" class="text-white"><i class="fa-brands fa-facebook"></i></a>
 					</div>
 				</div>
 			</div>
 		</footer>
+		<script src="assets/js/scripts.js"></script>
 	</body>
 </html>
